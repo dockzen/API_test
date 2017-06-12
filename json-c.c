@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "/usr/local/include/json-c/json.h"
+//#include "/usr/local/include/json-c/json.h"
+#include <json-c/json.h>
 #include "json-c.h"
 
 char *json_getString(char *data, char * key)

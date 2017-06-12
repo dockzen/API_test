@@ -4,7 +4,8 @@
 #include "client.h"
 #include "client_IF_stub.h"
 #include "json-c.h"
-#include "/usr/local/include/json-c/json.h"
+//#include "/usr/local/include/json-c/json.h"
+#include <json-c/json.h>
 
 int capi_hello(Hello *hello, Hello_Output *output);
 int capi_hello_notify(callbackFuncPtr func, Hello *hello, Hello_Output *output);
@@ -48,7 +49,7 @@ char * makeHelloInput(char *funcName, Hello *hello)
 	return ret_buf;
 }
 
-Hello_Output *makeHelloOuput(char *data, Hello_Output *output)
+Hello_Output *makeHelloOuput(char *data)
 {
 	Hello_Output *output = NULL;
 	

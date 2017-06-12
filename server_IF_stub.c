@@ -6,7 +6,8 @@
 #include "API_type.h"
 #include "server_IF_stub.h"
 #include "json-c.h"
-#include "/usr/local/include/json-c/json.h"
+//#include "/usr/local/include/json-c/json.h"
+#include <json-c/json.h>
 
 char * capi_hello(char *);
 char *capi_hello_notify(char *data);
